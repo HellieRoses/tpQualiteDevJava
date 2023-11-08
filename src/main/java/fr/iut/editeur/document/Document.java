@@ -31,6 +31,10 @@ public class Document {
         remplacer(start, end, texteMaj.toUpperCase());
     }
 
+    public void effacer(int start, int end){
+
+    }
+
     @Override
     public String toString() {
         return this.texte;
