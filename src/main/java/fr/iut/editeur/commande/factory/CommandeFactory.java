@@ -21,6 +21,7 @@ public class CommandeFactory {
             case "ajouter" : return new CommandeAjouter(document, parameters);
             case "remplacer" : return new CommandeRemplacer(document, parameters);
             case "majuscules" : return new CommandeMajuscule(document, parameters);
+            case "effacer" : return new CommandeEffacer(document, parameters);
             default: return null;
         }
     }
