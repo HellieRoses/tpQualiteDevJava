@@ -40,6 +40,12 @@ public class Document {
 
     }
 
+    public void insert(int start,String txt){
+        String leftPart = texte.substring(0, start+1);
+        String rightPart = texte.substring(start+1);
+        texte = leftPart+txt+rightPart;
+    }
+
     @Override
     public String toString() {
         return this.texte;
