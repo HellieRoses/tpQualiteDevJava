@@ -37,7 +37,6 @@ public class Document {
 
     public void clear(){
         remplacer(0,texte.length(),"");
-        ajouter("hehe");
     }
 
     @Override
