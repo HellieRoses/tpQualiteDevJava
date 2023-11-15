@@ -14,14 +14,9 @@ jobs:
           java-version: 17
 
   testsJob:
+    needs: [setup]
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: setupJava
-        uses: actions/setup-java@v1
-        with:
-          java-version: 17
       - name: Checkout
         uses: actions/checkout@v3
       - name: tests
