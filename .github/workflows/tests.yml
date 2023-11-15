@@ -3,7 +3,7 @@ name: tests
 on: push
 
 jobs:
-  job1:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: 17
 
-  job2:
+  testsJob:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
