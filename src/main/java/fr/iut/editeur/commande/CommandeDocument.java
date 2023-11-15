@@ -2,6 +2,9 @@ package fr.iut.editeur.commande;
 
 import fr.iut.editeur.document.Document;
 
+/**
+ * Classe mère, permet de créer des commandes influant sur les documents*/
+
 public abstract class CommandeDocument implements Commande {
 
     protected Document document;

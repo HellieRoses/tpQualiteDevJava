@@ -4,6 +4,7 @@ public class Document {
 
     private String texte;
 
+
     public Document() {
         this.texte = "";
     }
@@ -11,6 +12,11 @@ public class Document {
     public String getTexte() {
         return texte;
     }
+
+    /**
+     * Change le texte
+     * @param texte texte à remplacer
+     * */
 
     public void setTexte(String texte) {
         this.texte = texte;
@@ -39,6 +45,11 @@ public class Document {
         remplacer(0,texte.length(),"");
 
     }
+    /**
+     * inserer un texte apres un indice
+     * @param start indice de debut de l'insertion
+     * @param txt texte à insérer
+     * */
 
     public void insert(int start,String txt){
         String leftPart = texte.substring(0, start+1);
